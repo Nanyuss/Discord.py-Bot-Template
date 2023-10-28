@@ -15,9 +15,9 @@ class MyBot(commands.Bot):
             help_command=None
         )
         self.run(config("TOKEN"))
-        
+
     async def setup_hook(self):
-    	print(f"Estou online como {self.user}!")
-    	
+            print(f"Estou online como {self.user}!")
+
 if __name__ == "__main__":
-	MyBot()
+        MyBot()
