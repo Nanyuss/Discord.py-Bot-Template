@@ -50,7 +50,7 @@ PREFIX = PREFIXO_DO_SEU_BOT
 TOKEN = TOKEN_SEU_BOT
 BOT_ID = ID_DO_BOT
 ```
-**Atenção**: Mantenha o arquivo `.env` em sigilo para garantir a segurança do seu bot.
+> **Atenção**: Mantenha o arquivo `.env` em sigilo para garantir a segurança do seu bot.
 
 ## Dependências 
 
