@@ -19,9 +19,9 @@ Este é um template para criar um bot Discord usando discord.py, com suporte par
 Clone o repositório usando `git clone` ou faça o download
 
 - Você pode usar o seguinte comando para clonar:
-  ```bash
-  git clone https://github.com/Nanyuss/Discord.py-Bot-Template.git
-  ```
+```bash
+git clone https://github.com/Nanyuss/Discord.py-Bot-Template.git
+```
 - Fazer o Download do repositório no botão verde com o nome `<> code`, `Download Zip` e Extrair com o seu `Explorador de Arquivos`
 
 ## Configuração
