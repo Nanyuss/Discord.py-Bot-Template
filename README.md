@@ -1,6 +1,6 @@
 # Discord.py Bot Template
 
-Este é um template para criar um bot Discord usando discord.py, com suporte para comandos em slash, prefixo, híbridos, eventos, componentes, alguns comandos já prontos para começar e exemplos para ajudá-lo a começar.
+Este é um template para criar um bot Discord usando discord.py, com suporte para comandos em slash, prefixo, híbridos, eventos, componentes, alguns comandos já prontos e exemplos para ajudá-lo a começar.
 
 ## Sumário
 
