@@ -1,3 +1,5 @@
+import os
+import traceback
 import discord
 from discord.ext import commands
 from decouple import config
@@ -31,9 +33,23 @@ class MyBot(commands.Bot):
             help_command=None
         )
         self.run(config("TOKEN"))
-
+        
+    #Função que irá carregar as extensões, nescessário colocar somente o caminho da pasta onde estão os comandos/eventos.
+    async def load_cogs(self, path:str):
+    	for f in os.listdir(path):
+    		if f.endswith(".py"):
+    			try:
+    				await self.load_extension(f"{path[2:]}.{f[:-3]}")
+    				print(f"\033[32m✅Carregado {f} de {path}\033[0;0m")
+    			except Exception:
+    				print(f"\033[31m❌Falha ao carregar {f} de {path}\033[0;0m")
+    				traceback.print_exc()
+    				
+    async def on_ready(self):
+    	print(f"Estou online como {self.user}!")
+    				
     async def setup_hook(self):
-            print(f"Estou online como {self.user}!")
+    	await self.load_cogs("./commands")
 
 if __name__ == "__main__":
         MyBot()

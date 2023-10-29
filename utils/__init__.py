@@ -1,0 +1,1 @@
+from .resources import PERMISSIONS_PT
